@@ -1,56 +1,57 @@
 
-# Proyecto
+# Task Manager
 
 
-Prueba Técnica para Desarrollador Frontend - React
+Task Manager es una aplicación web desarrollada en React que te permite gestionar tus tareas de manera eficiente. Con esta aplicación, puedes agregar, editar, eliminar y marcar como completadas tus tareas pendientes.
 
-Objetivo: Evaluar las habilidades del candidato en el desarrollo de aplicaciones frontend con React.
+## Características
+* Gestión de Tareas: Agrega nuevas tareas, edita su contenido, marca tareas como completadas y elimina tareas que ya no necesitas.
+* Prioridades: Asigna prioridades a tus tareas para organizarlas de manera efectiva.
+* Interfaz Intuitiva: Diseño limpio e intuitivo que facilita la gestión de tareas.
+* Filtrado de tareas: Posibilidad de realizar filtrado por las prioridades de las tareas.
+
+## Tecnologías Utilizadas
+* React: Biblioteca de JavaScript para construir interfaces de usuario.
+* Redux: Biblioteca para el manejo del estado de la aplicación.
+* React Bootstrap: Componentes de interfaz de usuario preestablecidos para React.
+* Jest y React Testing Library: Utilizados para escribir y ejecutar pruebas unitarias.
 
 
-## Requisitos
+## Requisitos de ejecucion
 
-* Experiencia en React, HTML, JS, CSS
-* Capacidad de análisis y resolución de problemas
-* Habilidad para trabajar de forma autónoma y en equipo
+Antes de ejecutar la aplicación, asegúrate de tener instalados los siguientes requisitos de software en tu sistema:
+* Node.js
 
+Una vez que tengas instalado sigue estos pasos para ejecutar la aplicacion.
+1. Clonar el Repositorio en tu entorno local.
+2. Navega al directorio de tu proyecto:
+  
+   ```
+   cd task-manager
+    
+    ```
+3. Instalar dependencias: Ve al directorio raíz de la aplicación clonada e instala las dependencias ejecutando el siguiente comando:
 
+    ```
+   npm install
+    
+    ```
+4. Iniciar la aplicación: Una vez que se hayan instalado todas las dependencias, puedes iniciar la aplicación ejecutando el siguiente comando:
 
-## Descripción de la prueba
+    ```
+   npm start
 
-Desarrollar una aplicación web para gestionar una lista de tareas. La aplicación debe permitir a los usuarios agregar nuevas tareas, marcar las tareas como completadas y eliminar tareas de la lista. Además, las tareas deben poder ser categorizadas por su prioridad (alta, media, baja).
-## Funcionalidades
+    ```
+6. Ver la aplicación en el navegador: Abre tu navegador web y ve a la siguiente dirección: 
 
-* Lista de Tareas: Mostrar todas las tareas agregadas, con la opción de marcarlas como completadas y eliminarlas.
-* Agregar Tarea: Permitir al usuario agregar nuevas tareas a la lista. Cada tarea debe incluir un título, una descripción y una prioridad.
-* Marcar como Completada: Permitir al usuario marcar una tarea como completada.
-* Eliminar Tarea: Permitir al usuario eliminar una tarea de la lista.
-* Filtrar por Prioridad: Permitir al usuario filtrar las tareas por su prioridad (alta, media, baja).
-## Requisito Técnicos
+    ```
+   http://localhost:3000
 
-* Utilizar React para el desarrollo de la interfaz de usuario.
-* Utilizar algún estado de gestión de estado como Redux, Context API o Hooks.
-* Utilizar estilos CSS para hacer que la aplicación sea atractiva y fácil de usar.
-* Implementar pruebas unitarias para al menos una parte crítica de la aplicación.
-* La aplicación debe ser responsiva y funcionar correctamente en dispositivos móviles y de escritorio.
-## Entregables
+    ```
+Ejecucion de pruebas
+* Para ejecutar las pruebas unitarias, puedes utilizar el siguiente comando:
 
-* Código fuente de la aplicación.
-* Instrucciones claras sobre cómo ejecutar la aplicación localmente.
-## Evaluación
+```
+npm test
 
-La prueba se evaluará en base a los siguientes criterios:
-
-* Funcionalidad: ¿La aplicación cumple con todos los requisitos funcionales especificados?
-* Calidad del Código: ¿El código está bien estructurado, limpio y sigue las mejores prácticas de desarrollo?
-* Diseño y Usabilidad: ¿La interfaz de usuario es intuitiva y fácil de usar? ¿El diseño es atractivo y responsive?
-* Pruebas Unitarias: ¿Se han implementado pruebas unitarias para garantizar la calidad del código? No Excluyente
-* Documentación: ¿Se proporciona una documentación clara y concisa sobre cómo ejecutar la aplicación y las decisiones de diseño? No Excluyente
-## Tiempo estimado
-
-* 8 horas
-## Instrucciones de carga
-
-* Crear un fork del proyecto, registrarlo como "dev" seguido de los 3 últimos números de su CI. Ejemplo: "dev123"
-* Crear una rama feature a partir del main, con la misma metodología indicada arriba. Ejemplo: "feature/dev123"
-* Solicitar el PR
-
+```
