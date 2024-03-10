@@ -1,0 +1,12 @@
+node_modules/
+public/
+dist/
+coverage/
+
+prettier.config.cjs
+vite.config.ts
+src/vite-env.d.ts
+
+postcss.config.js
+*.svg
+tailwind.config.js
