@@ -1,6 +1,10 @@
 
 # Proyecto
 
+Como levantar el projecto en local?
+1- yarn 
+2- yarn start
+
 
 Prueba Técnica para Desarrollador Frontend - React
 
