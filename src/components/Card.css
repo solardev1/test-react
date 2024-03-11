@@ -1,0 +1,39 @@
+.card {
+  border: 2px solid #ededee;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  color: #080808;
+  background-color: #f1f1f1;
+}
+
+.dark .control {
+  color: #fff;
+  background-color: #3B3B3B;
+}
+
+.card__text {
+  color: grey
+}
+
+.card__label {
+  color: #989BAA;
+  padding-right: 5px;
+}
+
+.card__checkbox {
+  cursor: pointer;
+}
+
+.card__icon {
+  cursor: pointer;
+}

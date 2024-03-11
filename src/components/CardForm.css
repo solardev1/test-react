@@ -1,0 +1,39 @@
+.title {
+  color: #080808;
+  background-color: none;
+}
+
+.label {
+  color: #080808;
+}
+
+.control {
+  color: #080808;
+  background-color: #f1f1f1;
+}
+
+.dark .control {
+  color: #fff;
+  background-color: #3B3B3B;
+}
+
+.dark {
+  color:#fff;
+  background-color: none;
+}
+
+.cancel_button {
+  background-color: #475B72;
+  color: #fff;
+}
+.cancel_button:hover {
+  background-color: #546c86;
+}
+
+select {
+  background-color: #3B3B3B;
+}
+
+select option {
+  color: #fff;
+}

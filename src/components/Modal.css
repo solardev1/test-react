@@ -1,0 +1,88 @@
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.modal-content.dark {
+  background-color: #282c30;
+}
+
+.modal-content-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+.title {
+  color: #1a1a1a;
+}
+
+.title.dark {
+  color: white;
+}
+
+
+p {
+  margin: 0;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.modal-content-buttons-container {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+button {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px !important;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #505a64;
+}
