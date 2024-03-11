@@ -34,11 +34,10 @@ const Card: FC<CardProps> = ({ card, onDelete, onCheckAsFinished }) => {
             type="checkbox"
             id="state"
             name="state"
-            className="control"
+            className="control card__checkbox"
             onChange={handleCheckAsFinished}
             checked={card.checkAsFinished}
             readOnly={false}
-            style={{ cursor: 'pointer' }}
           />
         </div>
         <div className="card__content">

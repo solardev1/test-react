@@ -3,7 +3,7 @@ import { type SelectOption } from 'interfaces/select-option';
 
 interface SelectProps {
   className?: string;
-  label: string;
+  label?: string;
   options: SelectOption[];
   defaultValue?: string | number;
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
@@ -19,7 +19,7 @@ export const Select = ({
   const { theme } = useTheme();
   return (
     <>
-      <p className={`${className} label ${theme}`}>{label}</p>
+      {label && <p className={`${className} label ${theme}`}>{label}</p>}
       <select
         className="control"
         defaultValue={defaultValue}
