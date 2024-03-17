@@ -1,6 +1,8 @@
+import "../assets/css/TaskForm.css";
 import { useState } from "react";
 import { Priority, addTaskProps } from "../schema/ITask";
 import useTasks from "../hooks/useTasks";
+import Button from "./Button";
 
 export default function TaskForm() {
   const { addtask } = useTasks();
@@ -36,7 +38,7 @@ export default function TaskForm() {
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleFormSubmit} className="card form">
       <div className="form-group">
         <label htmlFor="title">Titulo</label>
         <input
@@ -73,9 +75,9 @@ export default function TaskForm() {
           <option value={Priority.HIGH}>{Priority.HIGH}</option>
         </select>
       </div>
-      <button type="submit" className="form-btn">
+      <Button type="submit" className="form-btn">
         Agregar
-      </button>
+      </Button>
     </form>
   );
 }

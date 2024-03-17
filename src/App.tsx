@@ -1,4 +1,4 @@
-import "./App.css";
+import "./assets/css/App.css";
 import Navbar from "./components/Navbar";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";

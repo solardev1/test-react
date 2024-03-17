@@ -1,0 +1,23 @@
+.navbar {
+  background-color: rgb(21, 41, 83);
+  color: white;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.navbar h1 {
+  text-align: left;
+  width: 100%;
+  font-size: 17px;
+}
+
+.navbar .name {
+  text-align: left;
+  width: 100%;
+  font-size: 11px;
+}

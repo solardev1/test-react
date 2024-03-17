@@ -1,29 +1,43 @@
 import useTasks from "../hooks/useTasks";
 import ITask from "../schema/ITask";
+import Button from "./Button";
 
-export default function TaskListItem(taks: ITask) {
+export default function TaskListItem(task: ITask) {
   const { deleteTaskById, markAsCompletedById } = useTasks();
 
   const handleMarkComplete = () => {
-    markAsCompletedById(taks.id, !taks.isCompleted);
+    markAsCompletedById(task.id, !task.isCompleted);
   };
 
   const handleDelete = () => {
-    deleteTaskById(taks.id);
+    deleteTaskById(task.id);
   };
 
   return (
-    <tr>
-      <td>{taks.title}</td>
-      <td>{taks.description}</td>
-      <td>{taks.priority}</td>
+    <tr className="task-list-item">
       <td>
-        <button onClick={handleMarkComplete}>
+        <p className={`title ${task.isCompleted ? "text-completed" : ""}`}>{task.title}</p>
+      </td>
+      <td>
+        <p className={task.isCompleted ? "text-completed" : ""}>
+          {task.description}
+        </p>
+      </td>
+      <td>
+        <div className="priority">
+          <p className={task.priority}>{task.priority}</p>
+        </div>
+      </td>
+      <td className="button-actions">
+        <Button
+          onClick={handleMarkComplete}
+          className={task.isCompleted ? "completed" : "not-completed"}
+        >
           <i className="fa-solid fa-check" />
-        </button>
-        <button onClick={handleDelete}>
+        </Button>
+        <Button onClick={handleDelete} className="delete">
           <i className="fa-solid fa-trash" />
-        </button>
+        </Button>
       </td>
     </tr>
   );
