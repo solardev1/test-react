@@ -7,8 +7,10 @@ export default function useTasks() {
   const { tasks, setTasks } = useContext(TaskContext);
 
   const addtask = ({ title, description, priority }: addTaskProps) => {
+    const maxId = Math.max(...tasks.map((task) => task.id));
+
     const newTask: ITask = {
-      id: tasks.length + 1,
+      id: maxId + 1,
       isCompleted: false,
       title,
       description,
@@ -23,10 +25,10 @@ export default function useTasks() {
     setTasks(newTasks);
   };
 
-  const markAsCompletedById = (id: number) => {
+  const changeTaskComplete = (id: number, isCompleted: boolean) => {
     const newTasks = tasks.map((task) => {
       if (task.id === id) {
-        return { ...task, isCompleted: true };
+        return { ...task, isCompleted: isCompleted };
       }
       return task;
     });
@@ -34,5 +36,11 @@ export default function useTasks() {
     setTasks(newTasks);
   };
 
-  return { tasks, setTasks, addtask, markAsCompletedById, deleteTaskById };
+  return {
+    tasks,
+    setTasks,
+    addtask,
+    markAsCompletedById: changeTaskComplete,
+    deleteTaskById,
+  };
 }

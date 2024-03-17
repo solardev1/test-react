@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import tasks from "../mockdata/tasks";
+import tasksData from "../mockdata/tasks";
 import ITask from "../schema/ITask";
 
 interface TaskConextProviderProps {
@@ -12,14 +12,14 @@ interface TaskContextProps {
 }
 
 export const TaskContext = createContext<TaskContextProps>({
-  tasks,
+  tasks: [],
   setTasks: () => {},
 });
 
 export default function TaskConextProvider({
   children,
 }: TaskConextProviderProps) {
-  const [tasks, setTasks] = useState<ITask[]>([]);
+  const [tasks, setTasks] = useState<ITask[]>(tasksData);
 
   return (
     <TaskContext.Provider value={{ tasks, setTasks }}>
