@@ -6,13 +6,23 @@ Prueba Técnica para Desarrollador Frontend - React
 
 Objetivo: Evaluar las habilidades del candidato en el desarrollo de aplicaciones frontend con React.
 
+## Setup del proyecto
+
+### Intalar dependencias
+```bash
+npm install
+```
+
+### Ejecutar en Desarollo
+```bash
+npm run dev
+```
 
 ## Requisitos
 
 * Experiencia en React, HTML, JS, CSS
 * Capacidad de análisis y resolución de problemas
 * Habilidad para trabajar de forma autónoma y en equipo
-
 
 
 ## Descripción de la prueba

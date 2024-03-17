@@ -1,0 +1,20 @@
+.button {
+  border-radius: 16px;
+  opacity: 0.9;
+  background: hsl(210, 13%, 25%);
+  color: white;
+  border: none;
+  box-shadow: 0px 2px 4px 0px rgba(12, 12, 26, 0.04),
+    0px 24px 48px -8px rgba(12, 12, 26, 0.12);
+  height: 40px;
+  min-width: 40px;
+
+  transition: .2s ease-in-out;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
