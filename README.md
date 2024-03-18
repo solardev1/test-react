@@ -1,56 +1,70 @@
+# Getting Started with Create React App
 
-# Proyecto
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-Prueba Técnica para Desarrollador Frontend - React
+In the project directory, you can run:
 
-Objetivo: Evaluar las habilidades del candidato en el desarrollo de aplicaciones frontend con React.
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Requisitos
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-* Experiencia en React, HTML, JS, CSS
-* Capacidad de análisis y resolución de problemas
-* Habilidad para trabajar de forma autónoma y en equipo
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-## Descripción de la prueba
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Desarrollar una aplicación web para gestionar una lista de tareas. La aplicación debe permitir a los usuarios agregar nuevas tareas, marcar las tareas como completadas y eliminar tareas de la lista. Además, las tareas deben poder ser categorizadas por su prioridad (alta, media, baja).
-## Funcionalidades
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-* Lista de Tareas: Mostrar todas las tareas agregadas, con la opción de marcarlas como completadas y eliminarlas.
-* Agregar Tarea: Permitir al usuario agregar nuevas tareas a la lista. Cada tarea debe incluir un título, una descripción y una prioridad.
-* Marcar como Completada: Permitir al usuario marcar una tarea como completada.
-* Eliminar Tarea: Permitir al usuario eliminar una tarea de la lista.
-* Filtrar por Prioridad: Permitir al usuario filtrar las tareas por su prioridad (alta, media, baja).
-## Requisito Técnicos
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* Utilizar React para el desarrollo de la interfaz de usuario.
-* Utilizar algún estado de gestión de estado como Redux, Context API o Hooks.
-* Utilizar estilos CSS para hacer que la aplicación sea atractiva y fácil de usar.
-* Implementar pruebas unitarias para al menos una parte crítica de la aplicación.
-* La aplicación debe ser responsiva y funcionar correctamente en dispositivos móviles y de escritorio.
-## Entregables
+### `npm run eject`
 
-* Código fuente de la aplicación.
-* Instrucciones claras sobre cómo ejecutar la aplicación localmente.
-## Evaluación
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-La prueba se evaluará en base a los siguientes criterios:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* Funcionalidad: ¿La aplicación cumple con todos los requisitos funcionales especificados?
-* Calidad del Código: ¿El código está bien estructurado, limpio y sigue las mejores prácticas de desarrollo?
-* Diseño y Usabilidad: ¿La interfaz de usuario es intuitiva y fácil de usar? ¿El diseño es atractivo y responsive?
-* Pruebas Unitarias: ¿Se han implementado pruebas unitarias para garantizar la calidad del código? No Excluyente
-* Documentación: ¿Se proporciona una documentación clara y concisa sobre cómo ejecutar la aplicación y las decisiones de diseño? No Excluyente
-## Tiempo estimado
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-* 8 horas
-## Instrucciones de carga
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-* Crear un fork del proyecto, registrarlo como "dev" seguido de los 3 últimos números de su CI. Ejemplo: "dev123"
-* Crear una rama feature a partir del main, con la misma metodología indicada arriba. Ejemplo: "feature/dev123"
-* Solicitar el PR
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
