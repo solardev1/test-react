@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const [nombre, setNombre] = useState('');
@@ -62,6 +63,9 @@ const Login = () => {
                             <button className="btn btn-success" onClick={handleLogin}>
                                 Iniciar Sesión
                             </button>
+                            <Link to="/create-user" className="btn btn-primary">
+                                Registrarse
+                            </Link>
                         </div>
                     </div>
                 </div>
